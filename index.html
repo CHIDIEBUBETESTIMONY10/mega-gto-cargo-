@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mega GTO Int'l Cargo Ltd</title>
+<!-- Splash Screen -->
+<div id="splash-screen">
+  <div class="logo-container">
+    <img src="Mega GTO Logo2.png" alt="Mega GTO " id="splash-logo">
+    <h1 class="splash-text">Mega GTO Int'l Cargo Ltd</h1>
+  </div>
+</div>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+ <link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+ <meta name="theme-color" content="#4B0082">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
+<script src="https://files.bpcontent.cloud/2025/08/10/22/20250810220521-V6KTMVIX.js" defer></script>
+    
+ <style>
+  
+
+  #splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background: linear-gradient(135deg, #4b0082, #b19cd9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 2s ease 4s forwards;
+}
+
+.logo-container {
+  text-align: center;
+  animation: zoomIn 2s ease;
+}
+
+#splash-logo {
+  width: 150px;
+  height: auto;
+  animation: float 3s infinite ease-in-out;
+}
+
+.splash-text {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Animations */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+   body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .navbar {
+      background-color: #4b0082;
+    }
+
+    .navbar-brand, .nav-link, .navbar-toggler {
+      color: white !important;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #4b0082, #b19cd9);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 20px;
+    }
+
+    .section-title {
+      color: #4b0082;
+      font-weight: bold;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .service-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .cta {
+      background-color: #4b0082;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 14px;
+      color: #999;
+      margin-top: 40px;
+    }
+
+    .btn-primary {
+      background-color: #4b0082;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 24px;
+    }
+
+    .btn-primary:hover {
+      background-color: #3a006a;
+    }
+  .btn-light:hover {
+  background-color: darkviolet;
+  color: white;
+}
+#google_translate_element {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.goog-te-gadget {
+  color: inherit !important;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+    <img src="Mega GTO Logo2.png" width="50">
+      <a class="navbar-brand" href="#">Mega GTO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-white">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Request Freight - Mega GTO.html">Request Freight</a></li>
+          <li class="nav-item"><a class="nav-link" href="cargo-tracking.html">Cargo Tracking</a></li>
+        <!-- Google Translate Element -->
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,pt,fr,es,de,zh-CN,ig,yo,ha',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container ">
+      <h1>Mega GTO Int'l Cargo Ltd</h1>
+      <p>Reliable Freight, Logistics, Delivery & Consultancy Services Since 2012</p>
+      <a href="Request Freight - Mega GTO.html " class="btn btn-light mt-4 ">Request Delivery</a>
+    </div>
+  </section>
+
+ 
+
+        <!-- Services Section -->
+<section id="services" class="container">
+  <h2 class="section-title">Our Core Services</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Groupage Container</h5>
+        <p>Efficient shipping of consolidated goods from multiple clients in shared containers.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Warehousing and Packaging/Storage</h5>
+        <p>Safe storage and professional packaging to prepare goods for transit or distribution.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Express Cargo</h5>
+        <p>Fast and time-sensitive cargo shipping for urgent deliveries locally and internationally.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>One Week Air Cargo</h5>
+        <p>Reliable weekly air cargo service for quick, scheduled international shipments.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Business Consultant</h5>
+        <p>Advisory services for trade, logistics, supply chain, and import/export business setups.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Purchasing Agency</h5>
+        <p>Procurement and buying services from international suppliers on behalf of clients.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Full Container Loading</h5>
+        <p>Dedicated full container shipping for high-volume or sensitive goods requiring isolation.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Door to Door Service</h5>
+        <p>Complete pickup and delivery solution from origin to final destination – hassle-free.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Sea and Air Cargo</h5>
+        <p>Flexible sea or air transport based on budget, speed, and destination requirements.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card service-card h-100 p-3">
+        <h5>Cash Management</h5>
+        <p>Secure handling and delivery of funds or payment settlements across logistic operations.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card service-card h-100 p-3">
+          <h5>Clearing & Forwarding</h5>
+          <p>We handle customs clearance, documentation, and all forwarding logistics.</p>
+        </div>
+        </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="text-center text-primary mb-4">About Mega GTO Int'l Cargo Ltd</h2>
+    
+    <p class="text-center">
+      <strong>Mega GTO Int’l Cargo Ltd</strong> is a <em>Private Company Limited by Shares</em> incorporated in Lagos, Nigeria on <strong>17th October 2012</strong>, with <strong>RC Number 1072358</strong>. Our business activity is registered under: <strong>General Merchants & Traders</strong>.
+    </p>
+
+    <p class="text-center">
+      <strong>Registered Office:</strong><br>
+      ZONE B, Block 14, Shops 50/52, ASPAMDA Trade Fair Complex,<br>
+      Lagos, Nigeria.
+    </p>
+
+    <h4 class="text-center mt-4">Board of Directors</h4>
+    <ul class="list-group list-group-flush mx-auto" style="max-width: 450px;">
+      <li class="list-group-item">Ilechukwu Angus Tochukwu Great – Director</li>
+      <li class="list-group-item">Ilechukwu Obianuel Chinelo – Director</li>
+      <li class="list-group-item">Ilechukwu Goodness Chetachi Peace – Director</li>
+      <li class="list-group-item"><strong>Ilechukwu Testimony Chidiebube</strong> – Director</li>
+    </ul>
+  </section>
+
+
+  <!-- CTA Section -->
+  <section class="container cta">
+    <h2>Ready to Ship With Us?</h2>
+    <p class="mb-4">Click below to get a freight quote or request a delivery.</p>
+    <a href="Request Freight - Mega GTO.html" class="btn btn-light btn-lg">Get Started</a>
+  </section>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(function () {
+        console.log('Service Worker Registered');
+      });
+  }
+</script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Place this at the bottom of your <body> -->
+<footer class="bg-light text-center text-muted py-4 mt-5">
+  <div class="container">
+    <p><strong>📍 Registered Office:</strong> ZONE B BLK 14 SHOPS 50/52, ASPAMDA TRADE FAIR, LAGOS, NIGERIA.</p>
+    
+    <h6 class="text-dark mt-4">📞 Contact Numbers</h6>
+    <p>
+      <strong>Nigerian Office:</strong><br>
+      <a href="https://wa.me/2348037232963" target="_blank">08037232963 (WhatsApp)</a> |
+      <a href="https://wa.me/2348027227206" target="_blank">08027227206 (WhatsApp)</a>
+    </p><p>
+      <strong>Angola Office:</strong><br>
+      +244928677959 |
+      +244930358531
+    </p>
+
+    <h6 class="text-dark mt-4">📧 Emails</h6>
+    <p>
+      <strong>Nigerian Office:</strong> <a href="mailto:megagtoa80@gmail.com">megagtoa80@gmail.com</a><br>
+      <strong>Angola Office:</strong> 
+      <a href="mailto:megagto99@gmail.com">megagto99@gmail.com</a>,
+      <a href="mailto:tochuks_inv_co@yahoo.com">tochuks_inv_co@yahoo.com</a>
+    </p>
+<form action="https://formspree.io/f/xjkoazlb" method="POST" class="text-center mt-5">
+  <h4>📧 Subscribe for Updates</h4>
+  <input type="email" name="email" required placeholder="Your email" class="form-control my-2" style="max-width: 300px; margin: auto;">
+  <button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
+
+    <hr>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Mega GTO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+   <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Services - Mega GTO.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Request Freight - Mega GTO.html">Request Freight</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Gallery Page.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Testimonials Page.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contact Page with Live Google Map & Form.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Cargo-Tracking.html">Ethiopian Airline Cargo Tracker</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Blog.html">Blog/News</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="Certificates.html">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="business-agent-signup.html">Become an Agent/Worker</a></li>
+        <li class="nav-item"><a class="nav-link" href="payment.html">Payment portal</a></li>
+        <li class="nav-item"><a class="nav-link" href="thank-you.html">Thank-You</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<button id="install-btn" style="display:none;">Install App</button>
+
+<script>
+  let deferredPrompt;
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    document.getElementById('install-btn').style.display = 'block';
+
+    document.getElementById('install-btn').addEventListener('click', () => {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(choiceResult => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
+    });
+  });
+</script>
+
+<p><a href="https://wa.me/2348037232963" target="_blank" title="Chat with us on WhatsApp" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <img src="Whatsapp Logo.png" alt="WhatsApp" style="width: 30px;">
+</a></p>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg) {
+        console.log('Service Worker registered!', reg);
+      }).catch(function(err) {
+        console.log('Service Worker registration failed: ', err);
+      });
+  }
+</script>
+<script>
+  // Optional: Delay hiding the splash screen manually (fallback)
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      const splash = document.getElementById('splash-screen');
+      splash.style.display = 'none';
+    }, 4000); // 4 seconds
+  });
+</script>
+
+  <!-- Footer -->
+    <footer class="bg-light text-center text-muted py-4 mt-5">
+    <p>&copy; 2025 Mega GTO Int’l Cargo Ltd — RC: 1072358. All rights reserved.</p>
+  </div>
+
+<!-- Toggle button and hitwebcounter (hidden by default) -->
+<!-- hitwebcounter Code START -->
+<div id="counter-toggle-container" style="position:fixed;bottom:90px;right:20px;z-index:2000;">
+  <button id="show-counter-btn">Show Counter</button>
+  <div id="hitwebcounter" style="display:none;">
+    <a href="https://www.hitwebcounter.com" target="_blank" width="50">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=21349253&style=0001&nbdigits=5&type=page&initCount=0" title="Counter Widget" alt="Visit counter For Websites" border="0" />
+    </a>
+  </div>
+</div>
+</footer>
+<script>
+  document.getElementById('show-counter-btn').onclick = function() {
+    const counter = document.getElementById('hitwebcounter');
+    if (counter.style.display === 'none') {
+      counter.style.display = 'block';
+      this.textContent = 'Hide Counter';
+    } else {
+      counter.style.display = 'none';
+      this.textContent = 'Show Counter';
+    }
+  };
+  
+
+    
+</script>
+</body>
+</html>
